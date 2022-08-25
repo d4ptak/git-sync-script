@@ -6,6 +6,8 @@ GREEN='\033[0;32m'
 RED='\033[0;31m'
 NC='\033[0m'
 
+BASENAME=`basename ${PWD}`
+
 echo -e "${GREEN}Sync started at `date +%T`${NC}"
 
 git status | grep "nothing to commit"
@@ -27,4 +29,4 @@ DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u)/bus"
 export DBUS_SESSION_BUS_ADDRESS
 
 # send a desktop notification
-notify-send 'Git Sync' "Successfully synced at `date +%T`"
+notify-send 'Git Sync' "Folder ${BASENAME} has been successfully synced at `date +%T`"
