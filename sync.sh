@@ -17,8 +17,8 @@ fi
 
 git add .
 git commit -m "Automatically synced."
-git pull origin master
-git push origin master
+git pull
+git push
 
 echo -e "${GREEN}Sync completed.${NC}"
 
