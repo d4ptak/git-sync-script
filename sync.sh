@@ -29,4 +29,4 @@ DBUS_SESSION_BUS_ADDRESS="unix:path=/run/user/$(id -u)/bus"
 export DBUS_SESSION_BUS_ADDRESS
 
 # send a desktop notification
-notify-send 'Git Sync' "Folder ${BASENAME} has been synced at `date +%T`"
+notify-send 'Git Sync' "Repository ${BASENAME} has been synced at `date +%T`"

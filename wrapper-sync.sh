@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# This script is used by the cron daemon to run multiple sync.sh scripts
+
 FILE='../repositories_to_sync.txt'
 
 if [ ! -f "$FILE" ]; then 
